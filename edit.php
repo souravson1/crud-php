@@ -3,7 +3,8 @@
 <div id="main-content">
     <h2>Update Record</h2>
     <?php
-    $conn = mysqli_connect('localhost', "root", "", "crud") or die("Connection failed");
+    include 'config.php';
+    
     $stuId = $_GET['id'];
     $sql = "SELECT * FROM student WHERE sid = {$stuId}";
 
